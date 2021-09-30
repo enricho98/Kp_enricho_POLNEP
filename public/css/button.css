@@ -1,0 +1,176 @@
+
+/*modal */
+.gilas{
+    width: 100%;
+}
+
+/*pedoman */
+
+#buttons {
+
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+  
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0%;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+}
+@keyframes slidefromright1 {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#buttons {
+    animation: 1s ease-out 0s 1 slidefromright1;
+
+}
+#buttons span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+}
+#buttons span::after {
+    content: '«';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+
+}
+#buttons:hover span {
+    padding-left: 25px;
+}
+
+#buttons:hover span:after {
+    opacity: 1;
+    left: 0;
+
+}
+#buttons:hover{
+    background-color: #555;
+}
+
+
+
+
+
+
+/*masuk*/
+#open-button {
+
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0%;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    
+}
+@keyframes d {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#open-button {
+    animation: 1s ease-out 0s 1 d;
+
+}
+#open-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+
+}
+#open-button span::after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -60px;
+    transition: 0.5s;
+
+}
+#open-button:hover span {
+    padding-right: 25px;
+}
+
+#open-button:hover span:after {
+    opacity: 1;
+    left: 0;
+
+}
+#open-button:hover{
+    background-color: #555;
+}
+
+
+#myBtn {
+
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 0%;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    border-radius: 0%;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+  }
+
+  #btn-back-to-top:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #btn-back-to-top:active {
+    background-color: #555;
+  }
+  #btn-back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    display: none;
+    border-radius: 0%;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+
+    width: 50px;
+    height: 50px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  }
