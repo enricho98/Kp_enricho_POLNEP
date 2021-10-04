@@ -66,11 +66,11 @@ Route::get('exportformat', [
 ]);
 
 Route::get('/download', function () {
-    $file = public_path() . "/29676585.pdf";
+    $file = public_path() . "/Manual-Book-Testimoni.pdf";
     $headers = array(
         'Content-Type: application/pdf',
     );
-    return response()->download($file, "Manual-Book.pdf", $headers);
+    return response()->download($file, "Manual-Book-Testimoni.pdf", $headers);
 });
 
 
